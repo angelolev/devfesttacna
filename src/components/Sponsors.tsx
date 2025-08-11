@@ -1,0 +1,46 @@
+const Sponsors = () => {
+  return (
+    <section id="sponsors" className="py-20 bg-white">
+      <div className="w-full max-w-7xl mx-auto px-4">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-google-yellow mb-6">
+            Sponsors
+          </h2>
+          <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+            Si estás interesado en estar presente a lo largo de la conferencia,{" "}
+            <span className="block sm:inline">
+              contact{" "}
+              <a
+                href="mailto:angelo@codinglatam.dev"
+                className="text-google-blue hover:underline font-medium"
+              >
+                angelo@codinglatam.dev
+              </a>{" "}
+              para discutir oportunidades de patrocinio.
+            </span>
+          </p>
+        </div>
+
+        <div className="grid grid-cols-2 md:grid-cols-2 gap-8 md:gap-12 items-center justify-items-center mb-16">
+          <div className="flex items-center justify-center h-20 w-full">
+            <img
+              src="/googlelogo.svg"
+              alt="Google"
+              className="max-h-16 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
+            />
+          </div>
+
+          <div className="flex items-center justify-center h-20 w-full">
+            <img
+              src="/googledevs.svg"
+              alt="Google for Developers"
+              className="max-h-16 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Sponsors;
