@@ -68,15 +68,16 @@ const Header: React.FC = () => {
               className="bg-white text-google-blue border-2 border-google-blue py-3 px-6 rounded-full font-medium text-sm inline-flex items-center gap-2 hover:bg-google-blue hover:text-white transition-all duration-300"
               aria-label="Ser voluntario"
             >
-              Sé voluntario
+              Ser voluntario
             </Link>
-            <button
-              onClick={() => scrollToSection("speaker")}
+
+            <Link
+              to="https://sessionize.com/devfest-tacna/"
+              target="_blank"
               className="bg-gradient-to-br from-google-blue to-blue-700 text-white border-none py-3 px-6 rounded-full font-medium text-sm cursor-pointer inline-flex items-center gap-2 hover:from-blue-700 hover:to-blue-800 transition-all duration-300"
-              aria-label="Ser un ponente"
             >
-              Sé un ponente
-            </button>
+              <span>Ser speaker</span>
+            </Link>
           </div>
 
           {/* Mobile Hamburger Button */}
@@ -147,14 +148,16 @@ const Header: React.FC = () => {
                   onClick={() => setIsMenuOpen(false)}
                   className="w-full bg-white text-google-blue border-2 border-google-blue py-3 px-6 rounded-full font-medium text-sm hover:bg-google-blue hover:text-white transition-all duration-300 block text-center"
                 >
-                  Sé voluntario
+                  Ser voluntario
                 </Link>
-                <button
-                  onClick={() => scrollToSection("speaker")}
-                  className="w-full bg-gradient-to-br from-google-blue to-blue-700 text-white border-none py-3 px-6 rounded-full font-medium text-sm hover:from-blue-700 hover:to-blue-800 transition-all duration-300"
+
+                <Link
+                  to="https://sessionize.com/devfest-tacna/"
+                  target="_blank"
+                  className="w-full block text-center bg-gradient-to-br from-google-blue to-blue-700 text-white border-none py-3 px-6 rounded-full font-medium text-sm hover:from-blue-700 hover:to-blue-800 transition-all duration-300"
                 >
-                  Sé un ponente
-                </button>
+                  <span>Ser speaker</span>
+                </Link>
               </div>
             </div>
           </nav>

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Hero: React.FC = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -44,27 +46,26 @@ const Hero: React.FC = () => {
                 Ubicación
               </span>
               <span className="text-lg font-semibold">
-                Centro Cultural Tacna
+                Centro de Convenciones "Jorge Basadre Grohmann"
               </span>
             </div>
             <div className="flex flex-col items-center gap-1">
               <span className="text-sm opacity-80 uppercase tracking-wider">
-                Duración
+                Hora de inicio
               </span>
-              <span className="text-lg font-semibold">
-                Evento de día completo
-              </span>
+              <span className="text-lg font-semibold">09:00 am</span>
             </div>
           </div>
 
           <div className="flex justify-center gap-5 mb-16 flex-wrap">
-            <button
-              onClick={() => scrollToSection("speaker")}
+            <Link
+              to="https://sessionize.com/devfest-tacna/"
+              target="_blank"
               className="bg-google-blue text-white border-none py-4 px-8 rounded-full font-medium text-base cursor-pointer inline-flex items-center gap-2 hover:bg-opacity-90"
             >
               <span>Postula tu charla</span>
               <span className="text-lg">→</span>
-            </button>
+            </Link>
             <button
               onClick={() => scrollToSection("volunteer")}
               className="bg-gray-200 text-gray-800 py-4 px-8 rounded-full font-medium text-base cursor-pointer inline-flex items-center gap-2 hover:bg-gray-300"

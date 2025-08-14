@@ -11,10 +11,10 @@ const Sponsors = () => {
             <span className="block sm:inline">
               contact{" "}
               <a
-                href="mailto:angelo@codinglatam.dev"
+                href="mailto:gdgtacna@gmail.com"
                 className="text-google-blue hover:underline font-medium"
               >
-                angelo@codinglatam.dev
+                gdgtacna@gmail.com
               </a>{" "}
               para discutir oportunidades de patrocinio.
             </span>
