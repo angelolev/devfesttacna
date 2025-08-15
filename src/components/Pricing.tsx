@@ -205,10 +205,10 @@ const Pricing = () => {
           <p className="text-sm text-gray-500">
             ¿Preguntas sobre los precios? Contáctanos en{" "}
             <a
-              href="mailto:hello@gdgtacna.org"
+              href="mailto:team@gdgtacna.org"
               className="text-google-blue hover:underline"
             >
-              hello@gdgtacna.org
+              team@gdgtacna.org
             </a>
           </p>
         </div>
