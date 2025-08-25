@@ -9,7 +9,7 @@ const Sponsors = () => {
           <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
             Si estás interesado en estar presente a lo largo de la conferencia,{" "}
             <span className="block sm:inline">
-              contact{" "}
+              contáctanos en{" "}
               <a
                 href="mailto:team@gdgtacna.com"
                 className="text-google-blue hover:underline font-medium"

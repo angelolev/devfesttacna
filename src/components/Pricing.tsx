@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Pricing = () => {
   const [selectedTier, setSelectedTier] = useState<"free" | "premium" | null>(
@@ -99,12 +100,13 @@ const Pricing = () => {
               </ul>
             </div>
 
-            <button
-              onClick={() => handleTierSelect("free")}
-              className="w-full bg-white text-google-blue border-2 border-google-blue py-4 px-8 rounded-full font-medium text-base cursor-pointer transition-all duration-300 hover:bg-google-blue hover:text-white hover:-translate-y-0.5 hover:shadow-lg mb-4"
+            <Link
+              to="https://forms.gle/Uyt55BhfH256BUJm6"
+              target="_blank"
+              className="w-full inline-block text-center bg-white text-google-blue border-2 border-google-blue py-4 px-8 rounded-full font-medium text-base cursor-pointer transition-all duration-300 hover:bg-google-blue hover:text-white hover:-translate-y-0.5 hover:shadow-lg mb-4"
             >
               Reserva tu lugar gratis
-            </button>
+            </Link>
             <p className="text-center text-xs text-gray-500 italic">
               Capacidad limitada • Por orden de llegada
             </p>
@@ -145,14 +147,6 @@ const Pricing = () => {
                     ✓
                   </span>
                   <span className="text-sm leading-relaxed">
-                    Acceso a talleres exclusivos
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-google-blue font-bold text-base mt-0.5">
-                    ✓
-                  </span>
-                  <span className="text-sm leading-relaxed">
                     Certificado digital de asistencia
                   </span>
                 </li>
@@ -185,14 +179,16 @@ const Pricing = () => {
               </ul>
             </div>
 
-            <button
-              onClick={() => handleTierSelect("premium")}
-              className="w-full bg-gradient-to-br from-google-blue to-blue-700 text-white border-none py-4 px-8 rounded-full font-medium text-base cursor-pointer hover:from-blue-700 hover:to-blue-800 mb-4"
+            <Link
+              to="https://forms.gle/Uyt55BhfH256BUJm6"
+              target="_blank"
+              className="w-full inline-block text-center bg-gradient-to-br from-google-blue to-blue-700 text-white border-none py-4 px-8 rounded-full font-medium text-base cursor-pointer hover:from-blue-700 hover:to-blue-800 mb-4"
             >
               Obtener acceso premium
-            </button>
+            </Link>
+
             <p className="text-center text-xs text-gray-500 italic">
-              El mejor valor para desarrolladores serios
+              La mejor opción para vivir una experiencia única
             </p>
           </div>
         </div>
@@ -205,10 +201,10 @@ const Pricing = () => {
           <p className="text-sm text-gray-500">
             ¿Preguntas sobre los precios? Contáctanos en{" "}
             <a
-              href="mailto:team@gdgtacna.org"
+              href="mailto:team@gdgtacna.com"
               className="text-google-blue hover:underline"
             >
-              team@gdgtacna.org
+              team@gdgtacna.com
             </a>
           </p>
         </div>

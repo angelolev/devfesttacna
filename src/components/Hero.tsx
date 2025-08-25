@@ -78,16 +78,16 @@ const Hero: React.FC = () => {
           <div className="flex justify-center gap-16 flex-wrap">
             <div className="flex flex-col items-center gap-1">
               <span className="text-4xl font-bold text-google-yellow">
-                200+
+                300+
               </span>
               <span className="text-sm opacity-90">Asistentes esperados</span>
             </div>
             <div className="flex flex-col items-center gap-1">
-              <span className="text-4xl font-bold text-google-yellow">10+</span>
+              <span className="text-4xl font-bold text-google-yellow">5+</span>
               <span className="text-sm opacity-90">Ponentes expertos</span>
             </div>
             <div className="flex flex-col items-center gap-1">
-              <span className="text-4xl font-bold text-google-yellow">5+</span>
+              <span className="text-4xl font-bold text-google-yellow">3+</span>
               <span className="text-sm opacity-90">Talleres prácticos</span>
             </div>
           </div>

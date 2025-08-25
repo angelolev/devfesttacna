@@ -129,7 +129,7 @@ const Schedule = () => {
                   10:15 AM
                 </span>
                 <span className="text-xs text-gray-500 uppercase tracking-wide">
-                  30 min
+                  45 min
                 </span>
               </div>
               <div className="flex-1">
@@ -145,6 +145,30 @@ const Schedule = () => {
                   <span className="text-gray-700">
                     Damian Sire - Google Developer Expert Angular
                   </span>
+                </div>
+                <div className="text-gray-600 text-sm italic">
+                  📍 Auditorio principal
+                </div>
+              </div>
+            </div>
+
+            <div className="flex gap-6 p-6 bg-gray-50 rounded-xl">
+              <div className="min-w-[100px] text-center">
+                <span className="text-xl font-semibold text-google-blue block">
+                  11:00 AM
+                </span>
+                <span className="text-xs text-gray-500 uppercase tracking-wide">
+                  45 min
+                </span>
+              </div>
+              <div className="flex-1">
+                <h3 className="text-gray-800 mb-2 text-lg font-semibold">
+                  TBD
+                </h3>
+                <p className="text-gray-600 mb-3">TBD</p>
+                <div className="flex items-center gap-2 mb-2 text-sm">
+                  <span className="text-base">☁️</span>
+                  <span className="text-gray-700">TBD</span>
                 </div>
                 <div className="text-gray-600 text-sm italic">
                   📍 Auditorio principal
@@ -201,10 +225,10 @@ const Schedule = () => {
             <div className="flex gap-6 p-6 bg-green-50 rounded-xl border-l-4 border-primary-purple">
               <div className="min-w-[100px] text-center">
                 <span className="text-xl font-semibold text-google-blue block">
-                  12:30 PM
+                  12:00 PM
                 </span>
                 <span className="text-xs text-gray-500 uppercase tracking-wide">
-                  60 min
+                  90 min
                 </span>
               </div>
               <div className="flex-1">
@@ -235,21 +259,17 @@ const Schedule = () => {
                   1:30 PM
                 </span>
                 <span className="text-xs text-gray-500 uppercase tracking-wide">
-                  30 min
+                  45 min
                 </span>
               </div>
               <div className="flex-1">
                 <h3 className="text-gray-800 mb-2 text-lg font-semibold">
-                  IA y Machine Learning en la práctica
+                  TBD
                 </h3>
-                <p className="text-gray-600 mb-3">
-                  Implementación de soluciones de ML con TensorFlow y Google AI
-                </p>
+                <p className="text-gray-600 mb-3">TBD</p>
                 <div className="flex items-center gap-2 mb-2 text-sm">
                   <span className="text-base">🤖</span>
-                  <span className="text-gray-700">
-                    Experto en ingeniería de ML
-                  </span>
+                  <span className="text-gray-700">TBD</span>
                 </div>
                 <div className="text-gray-600 text-sm italic">
                   📍 Auditorio principal
@@ -268,14 +288,12 @@ const Schedule = () => {
               </div>
               <div className="flex-1">
                 <h3 className="text-gray-800 mb-2 text-lg font-semibold">
-                  Mejores prácticas de DevOps
+                  TBD
                 </h3>
-                <p className="text-gray-600 mb-3">
-                  CI/CD, contenedorización y estrategias de despliegue
-                </p>
+                <p className="text-gray-600 mb-3">TBD</p>
                 <div className="flex items-center gap-2 mb-2 text-sm">
                   <span className="text-base">⚙️</span>
-                  <span className="text-gray-700">Especialista en DevOps</span>
+                  <span className="text-gray-700">TBD</span>
                 </div>
                 <div className="text-gray-600 text-sm italic">
                   📍 Auditorio principal
@@ -317,7 +335,7 @@ const Schedule = () => {
                   Panel de discusión: Crecimiento profesional en tecnología
                 </h3>
                 <p className="text-gray-600 mb-3">
-                  Líderes de la industria discuten el desarrollo profesional y
+                  Expertos en tecnología discuten el desarrollo profesional y
                   las oportunidades en tecnología
                 </p>
                 <div className="flex items-center gap-2 mb-2 text-sm">
@@ -365,13 +383,13 @@ const Schedule = () => {
               </div>
               <div className="flex-1">
                 <h3 className="text-gray-800 mb-2 text-lg font-semibold">
-                  Networking y fiesta de clausura
+                  Networking y clausura
                 </h3>
                 <p className="text-gray-600 mb-2">
                   Networking final, fotos y celebración
                 </p>
                 <div className="text-gray-600 text-sm italic">
-                  📍 Sala de exposiciones
+                  📍 Auditorio principal
                 </div>
               </div>
             </div>
