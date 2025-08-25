@@ -38,7 +38,7 @@ const Hero: React.FC = () => {
                 Fecha
               </span>
               <span className="text-lg font-semibold">
-                08 de Noviembre de 2025
+                22 de Noviembre de 2025
               </span>
             </div>
             <div className="flex flex-col items-center gap-1">

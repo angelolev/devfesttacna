@@ -5,19 +5,19 @@ const Schedule = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-google-blue mb-4">Agenda</h2>
           <p className="text-lg text-gray-600">
-            Un día completo de aprendizaje, networking e innovación • 08 de
+            Un día completo de aprendizaje, networking e innovación • 22 de
             noviembre de 2025
           </p>
         </div>
 
-        <div className="flex justify-center gap-3 mb-10">
+        {/* <div className="flex justify-center gap-3 mb-10">
           <button className="bg-google-blue text-white py-3 px-6 rounded-full font-medium transition-all duration-300">
             Charlas
           </button>
           <button className="bg-gray-100 text-gray-700 py-3 px-6 rounded-full font-medium transition-all duration-300 hover:bg-gray-200">
             Talleres
           </button>
-        </div>
+        </div> */}
 
         <div className="max-w-4xl mx-auto">
           <div className="space-y-8">
@@ -27,15 +27,15 @@ const Schedule = () => {
                   8:00 AM
                 </span>
                 <span className="text-xs text-gray-500 uppercase tracking-wide">
-                  30 min
+                  60 min
                 </span>
               </div>
               <div className="flex-1">
                 <h3 className="text-gray-800 mb-2 text-lg font-semibold">
-                  Registro y café de bienvenida
+                  Registro y bienvenida
                 </h3>
                 <p className="text-gray-600 mb-2">
-                  Check-in, recojo de credenciales, networking y desayuno ligero
+                  Check-in, recojo de credenciales y networking
                 </p>
                 <div className="text-gray-600 text-sm italic">
                   📍 Vestíbulo principal
@@ -46,10 +46,10 @@ const Schedule = () => {
             <div className="flex gap-6 p-6 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl border-l-4 border-primary-purple">
               <div className="min-w-[100px] text-center">
                 <span className="text-xl font-semibold text-google-blue block">
-                  8:30 AM
+                  9:00 AM
                 </span>
                 <span className="text-xs text-gray-500 uppercase tracking-wide">
-                  45 min
+                  30 min
                 </span>
               </div>
               <div className="flex-1">
@@ -57,17 +57,15 @@ const Schedule = () => {
                   Keynote de apertura
                 </h3>
                 <p className="text-gray-600 mb-2">
-                  <strong>"El futuro del desarrollo web"</strong>
+                  <strong>La comunidad tech en Tacna</strong>
                 </p>
                 <p className="text-gray-600 mb-3">
-                  Bienvenida a DevFest Tacna y descripción general de las
-                  tecnologías web emergentes
+                  Bienvenida a DevFest Tacna y anuncios generales de la
+                  comunidad
                 </p>
                 <div className="flex items-center gap-2 mb-2 text-sm">
                   <span className="text-base">🎤</span>
-                  <span className="text-gray-700">
-                    Por anunciar - Google Developer Expert
-                  </span>
+                  <span className="text-gray-700">Equipo GDG Tacna</span>
                 </div>
                 <div className="text-gray-600 text-sm italic">
                   📍 Auditorio principal
@@ -87,14 +85,17 @@ const Schedule = () => {
               </div>
               <div className="flex-1">
                 <h3 className="text-gray-800 mb-2 text-lg font-semibold">
-                  Construyendo aplicaciones modernas con React
+                  Diseño + IA: El futuro del desarrollo con MCP y Figma
                 </h3>
                 <p className="text-gray-600 mb-3">
-                  Mejores prácticas para el desarrollo de React en 2025
+                  Una visión práctica del futuro donde el diseño y el código
+                  hablan el mismo idioma.
                 </p>
                 <div className="flex items-center gap-2 mb-2 text-sm">
                   <span className="text-base">👨‍💻</span>
-                  <span className="text-gray-700">Por anunciar</span>
+                  <span className="text-gray-700">
+                    Jimy Dolores - Fundador Angular Perú
+                  </span>
                 </div>
                 <div className="text-gray-600 text-sm italic">
                   📍 Auditorio principal
@@ -115,7 +116,7 @@ const Schedule = () => {
                 <h3 className="text-gray-800 mb-2 text-lg font-semibold">
                   Pausa para el café
                 </h3>
-                <p className="text-gray-600 mb-2">Networking y refrigerios</p>
+                <p className="text-gray-600 mb-2">Networking y refrigerio</p>
                 <div className="text-gray-600 text-sm italic">
                   📍 Vestíbulo principal
                 </div>
@@ -133,14 +134,17 @@ const Schedule = () => {
               </div>
               <div className="flex-1">
                 <h3 className="text-gray-800 mb-2 text-lg font-semibold">
-                  Arquitectura en la nube con Google Cloud
+                  Web Workers: Architectural Patterns for High-Performance Apps
                 </h3>
                 <p className="text-gray-600 mb-3">
-                  Diseño de aplicaciones escalables con los servicios de GCP
+                  Web Workers para optimizar aplicaciones Angular con tareas
+                  concurrentes.
                 </p>
                 <div className="flex items-center gap-2 mb-2 text-sm">
                   <span className="text-base">☁️</span>
-                  <span className="text-gray-700">Experto en Google Cloud</span>
+                  <span className="text-gray-700">
+                    Damian Sire - Google Developer Expert Angular
+                  </span>
                 </div>
                 <div className="text-gray-600 text-sm italic">
                   📍 Auditorio principal
@@ -148,7 +152,7 @@ const Schedule = () => {
               </div>
             </div>
 
-            <div className="flex gap-6 p-6 bg-gradient-to-r from-orange-50 to-pink-50 rounded-xl border-l-4 border-orange-400">
+            {/* <div className="flex gap-6 p-6 bg-gradient-to-r from-orange-50 to-pink-50 rounded-xl border-l-4 border-orange-400">
               <div className="min-w-[100px] text-center">
                 <span className="text-xl font-semibold text-google-blue block">
                   11:00 AM
@@ -192,7 +196,7 @@ const Schedule = () => {
                   tiempo para networking y exhibiciones
                 </p>
               </div>
-            </div>
+            </div> */}
 
             <div className="flex gap-6 p-6 bg-green-50 rounded-xl border-l-4 border-primary-purple">
               <div className="min-w-[100px] text-center">
@@ -219,7 +223,7 @@ const Schedule = () => {
                   </div>
                 </div>
                 <div className="text-gray-600 text-sm italic">
-                  📍 Sala de exposiciones
+                  📍 Vestíbulo principal
                 </div>
               </div>
             </div>
