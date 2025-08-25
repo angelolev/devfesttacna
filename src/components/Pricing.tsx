@@ -1,6 +1,11 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Pricing = () => {
+  const [selectedTier, setSelectedTier] = useState<"free" | "premium" | null>(
+    null
+  );
+
   return (
     <section id="pricing" className="bg-gray-50 py-24">
       <div className="w-full max-w-7xl mx-auto px-4">
