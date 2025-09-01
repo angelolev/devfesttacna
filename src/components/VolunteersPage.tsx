@@ -1,9 +1,13 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { addVolunteer } from "../lib/volunteers";
 import Header from "./Header";
 import Footer from "./Footer";
 
 const VolunteersPage: React.FC = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -347,12 +351,14 @@ const VolunteersPage: React.FC = () => {
                 </div>
 
                 {submitStatus === "success" && (
-                  <div 
+                  <div
                     className="mb-6 p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg flex items-start gap-3"
                     role="alert"
                     aria-live="polite"
                   >
-                    <span className="text-green-600 text-xl flex-shrink-0">✅</span>
+                    <span className="text-green-600 text-xl flex-shrink-0">
+                      ✅
+                    </span>
                     <div>
                       <strong className="block mb-1">¡Registro exitoso!</strong>
                       ¡Gracias por ofrecerte como voluntario! Nos pondremos en
@@ -362,16 +368,20 @@ const VolunteersPage: React.FC = () => {
                 )}
 
                 {submitStatus === "error" && (
-                  <div 
+                  <div
                     className="mb-6 p-4 bg-red-100 border border-red-400 text-red-700 rounded-lg flex items-start gap-3"
                     role="alert"
                     aria-live="polite"
                   >
-                    <span className="text-red-600 text-xl flex-shrink-0">❌</span>
+                    <span className="text-red-600 text-xl flex-shrink-0">
+                      ❌
+                    </span>
                     <div>
-                      <strong className="block mb-1">Error en el registro</strong>
-                      Se ha producido un error al enviar tu solicitud. Por favor,
-                      inténtalo de nuevo.
+                      <strong className="block mb-1">
+                        Error en el registro
+                      </strong>
+                      Se ha producido un error al enviar tu solicitud. Por
+                      favor, inténtalo de nuevo.
                     </div>
                   </div>
                 )}
@@ -385,8 +395,20 @@ const VolunteersPage: React.FC = () => {
                   {isSubmitting ? (
                     <span className="flex items-center justify-center gap-2">
                       <svg className="animate-spin h-5 w-5" viewBox="0 0 24 24">
-                        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none"/>
-                        <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"/>
+                        <circle
+                          className="opacity-25"
+                          cx="12"
+                          cy="12"
+                          r="10"
+                          stroke="currentColor"
+                          strokeWidth="4"
+                          fill="none"
+                        />
+                        <path
+                          className="opacity-75"
+                          fill="currentColor"
+                          d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                        />
                       </svg>
                       Enviando...
                     </span>
