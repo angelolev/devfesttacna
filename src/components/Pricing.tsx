@@ -5,9 +5,9 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Pricing = () => {
-  const [selectedTier, setSelectedTier] = useState<"free" | "premium" | null>(
-    null
-  );
+  const [selectedTier, setSelectedTier] = useState<
+    "free" | "certificate" | "premium" | null
+  >(null);
 
   return (
     <section id="pricing" className="bg-gray-50 py-24">
@@ -22,18 +22,18 @@ const Pricing = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 max-w-4xl mx-auto mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
           {/* Free Tier */}
           <div
-            className={`bg-white border-2 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-lg ${
+            className={`bg-white border-2 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-lg flex flex-col h-full ${
               selectedTier === "free"
                 ? "border-google-blue transform -translate-y-1"
                 : "border-transparent shadow-md"
             }`}
           >
             <div className="text-center mb-8">
-              <div className="inline-block bg-green-100 text-green-700 px-4 py-1 rounded-full text-xs font-semibold uppercase tracking-wide mb-4">
-                Más popular
+              <div className="inline-block bg-blue-100 text-blue-700 px-4 py-1 rounded-full text-xs font-semibold uppercase tracking-wide mb-4">
+                General
               </div>
               <h3 className="text-xl text-gray-800 mb-4 font-semibold">
                 Acceso a la conferencia
@@ -42,13 +42,10 @@ const Pricing = () => {
                 <span className="text-4xl font-bold text-google-blue">
                   GRATIS
                 </span>
-                <span className="text-sm text-gray-500 uppercase tracking-wide">
-                  Día completo
-                </span>
               </div>
             </div>
 
-            <div>
+            <div className="flex-1">
               <h4 className="text-gray-800 mb-4 text-lg font-semibold">
                 Qué incluye:
               </h4>
@@ -102,9 +99,58 @@ const Pricing = () => {
             </p>
           </div>
 
+          {/* Certificate Tier */}
+          <div
+            className={`bg-white border-2 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-lg flex flex-col h-full ${
+              selectedTier === "certificate"
+                ? "border-google-blue transform -translate-y-1"
+                : "border-transparent shadow-md"
+            }`}
+          >
+            <div className="text-center mb-8">
+              <div className="inline-block bg-green-100 text-green-700 px-4 py-1 rounded-full text-xs font-semibold uppercase tracking-wide mb-4">
+                Más popular
+              </div>
+              <h3 className="text-xl text-gray-800 mb-4 font-semibold">Pro</h3>
+              <div className="flex flex-col items-center gap-1">
+                <span className="text-4xl font-bold text-google-blue">
+                  S/ 29
+                </span>
+              </div>
+            </div>
+
+            <div className="flex-1">
+              <h4 className="text-gray-800 mb-4 text-lg font-semibold">
+                Todo lo de la entrada gratuita, más:
+              </h4>
+              <ul className="space-y-3 mb-8">
+                <li className="flex items-start gap-3">
+                  <span className="text-google-blue font-bold text-base mt-0.5">
+                    ✓
+                  </span>
+                  <span className="text-sm leading-relaxed">
+                    Certificado digital de asistencia
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+            <Link
+              to="https://wa.link/c782lg"
+              target="_blank"
+              className="w-full inline-block text-center bg-google-blue text-white border-none py-4 px-8 rounded-full font-medium text-base cursor-pointer transition-all duration-300 hover:bg-blue-700 hover:-translate-y-0.5 hover:shadow-lg mb-4"
+            >
+              Obtener certificado
+            </Link>
+
+            <p className="text-center text-xs text-gray-500 italic">
+              Ideal si quieres validar tu asistencia
+            </p>
+          </div>
+
           {/* Premium Tier */}
           <div
-            className={`bg-white border-2 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-lg ${
+            className={`bg-white border-2 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-lg flex flex-col h-full ${
               selectedTier === "premium"
                 ? "border-google-blue transform -translate-y-1"
                 : "border-transparent shadow-md"
@@ -115,19 +161,16 @@ const Pricing = () => {
                 Experiencia Premium
               </div>
               <h3 className="text-xl text-gray-800 mb-4 font-semibold">
-                Acceso Premium
+                Platinum
               </h3>
               <div className="flex flex-col items-center gap-1">
                 <span className="text-4xl font-bold text-google-blue">
                   S/ 49
                 </span>
-                <span className="text-sm text-gray-500 uppercase tracking-wide">
-                  Día completo + Beneficios
-                </span>
               </div>
             </div>
 
-            <div>
+            <div className="flex-1">
               <h4 className="text-gray-800 mb-4 text-lg font-semibold">
                 Todo lo de la entrada gratuita, más:
               </h4>
@@ -170,7 +213,7 @@ const Pricing = () => {
             </div>
 
             <Link
-              to="https://forms.gle/Uyt55BhfH256BUJm6"
+              to="https://wa.link/h7zpdo"
               target="_blank"
               className="w-full inline-block text-center bg-gradient-to-br from-google-blue to-blue-700 text-white border-none py-4 px-8 rounded-full font-medium text-base cursor-pointer hover:from-blue-700 hover:to-blue-800 mb-4"
             >

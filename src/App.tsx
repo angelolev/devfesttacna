@@ -3,7 +3,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import VolunteerCTA from "./components/VolunteerCTA";
 import Pricing from "./components/Pricing";
-import Schedule from "./components/Schedule";
+import Topics from "./components/Topics";
 import Sponsors from "./components/Sponsors";
 import Footer from "./components/Footer";
 import AdminRoute from "./components/AdminRoute";
@@ -15,7 +15,7 @@ function HomePage() {
       <Header />
       <main className="">
         <Hero />
-        <Schedule />
+        <Topics />
         <Pricing />
         <VolunteerCTA />
         <Sponsors />
