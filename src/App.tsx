@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import VolunteerCTA from "./components/VolunteerCTA";
@@ -10,6 +11,19 @@ import AdminRoute from "./components/AdminRoute";
 import VolunteersPage from "./components/VolunteersPage";
 
 function HomePage() {
+  useEffect(() => {
+    // Manejar hash cuando se carga la página
+    if (window.location.hash) {
+      const sectionId = window.location.hash.substring(1);
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100); // Pequeño delay para asegurar que los elementos estén renderizados
+    }
+  }, []);
+
   return (
     <div className="min-h-screen flex flex-col">
       <Header />

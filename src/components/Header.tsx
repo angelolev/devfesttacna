@@ -1,12 +1,20 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    element?.scrollIntoView({ behavior: "smooth" });
+  const navigateToSection = (sectionId: string) => {
+    if (location.pathname === '/') {
+      // Si estamos en la página principal, hacer scroll directo
+      const element = document.getElementById(sectionId);
+      element?.scrollIntoView({ behavior: "smooth" });
+    } else {
+      // Si estamos en otra página, navegar a la página principal con hash
+      navigate(`/#${sectionId}`);
+    }
     setIsMenuOpen(false); // Close mobile menu after navigation
   };
 
@@ -32,28 +40,28 @@ const Header: React.FC = () => {
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex gap-6 items-center">
             <button
-              onClick={() => scrollToSection("schedule")}
+              onClick={() => navigateToSection("topics")}
               className="bg-transparent border-none text-gray-800 text-base font-medium cursor-pointer py-2 px-4 rounded-full hover:bg-gray-100 hover:text-google-blue transition-colors"
               aria-label="Ir a Cronograma"
             >
               Agenda
             </button>
             <button
-              onClick={() => scrollToSection("pricing")}
+              onClick={() => navigateToSection("pricing")}
               className="bg-transparent border-none text-gray-800 text-base font-medium cursor-pointer py-2 px-4 rounded-full hover:bg-gray-100 hover:text-google-blue transition-colors"
               aria-label="Ir a Entradas"
             >
               Entradas
             </button>
-            <button
-              onClick={() => scrollToSection("speakers")}
+            {/* <button
+              onClick={() => navigateToSection("speakers")}
               className="bg-transparent border-none text-gray-800 text-base font-medium cursor-pointer py-2 px-4 rounded-full hover:bg-gray-100 hover:text-google-blue transition-colors"
               aria-label="Ir a Ponentes"
             >
               Ponentes
-            </button>
+            </button> */}
             <button
-              onClick={() => scrollToSection("sponsors")}
+              onClick={() => navigateToSection("sponsors")}
               className="bg-transparent border-none text-gray-800 text-base font-medium cursor-pointer py-2 px-4 rounded-full hover:bg-gray-100 hover:text-google-blue transition-colors"
               aria-label="Ir a Contacto"
             >
@@ -118,28 +126,28 @@ const Header: React.FC = () => {
           <nav className="pt-4 pb-2">
             <div className="flex flex-col space-y-2">
               <button
-                onClick={() => scrollToSection("schedule")}
+                onClick={() => navigateToSection("topics")}
                 className="text-left py-3 px-4 text-gray-800 hover:bg-gray-100 hover:text-google-blue rounded-lg transition-colors"
               >
-                Cronograma
+                Agenda
               </button>
               <button
-                onClick={() => scrollToSection("pricing")}
+                onClick={() => navigateToSection("pricing")}
                 className="text-left py-3 px-4 text-gray-800 hover:bg-gray-100 hover:text-google-blue rounded-lg transition-colors"
               >
                 Entradas
               </button>
               <button
-                onClick={() => scrollToSection("speakers")}
+                onClick={() => navigateToSection("speakers")}
                 className="text-left py-3 px-4 text-gray-800 hover:bg-gray-100 hover:text-google-blue rounded-lg transition-colors"
               >
                 Ponentes
               </button>
               <button
-                onClick={() => scrollToSection("contact")}
+                onClick={() => navigateToSection("sponsors")}
                 className="text-left py-3 px-4 text-gray-800 hover:bg-gray-100 hover:text-google-blue rounded-lg transition-colors"
               >
-                Contacto
+                Sponsors
               </button>
 
               <div className="pt-4 space-y-3">

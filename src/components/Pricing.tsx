@@ -95,7 +95,7 @@ const Pricing = () => {
               Reserva tu lugar gratis
             </Link>
             <p className="text-center text-xs text-gray-500 italic">
-              Capacidad limitada • Por orden de llegada
+              Capacidad limitada
             </p>
           </div>
 
@@ -140,7 +140,7 @@ const Pricing = () => {
               target="_blank"
               className="w-full inline-block text-center bg-google-blue text-white border-none py-4 px-8 rounded-full font-medium text-base cursor-pointer transition-all duration-300 hover:bg-blue-700 hover:-translate-y-0.5 hover:shadow-lg mb-4"
             >
-              Obtener certificado
+              Obtener acceso Pro
             </Link>
 
             <p className="text-center text-xs text-gray-500 italic">
@@ -157,7 +157,10 @@ const Pricing = () => {
             } bg-gradient-to-br from-white to-purple-50`}
           >
             <div className="text-center mb-8">
-              <div className="inline-block bg-gradient-to-r from-google-blue to-blue-700 text-white px-4 py-1 rounded-full text-xs font-semibold uppercase tracking-wide mb-4">
+              <div className="inline-block bg-red-600 text-white px-4 py-2 rounded-full text-sm font-bold uppercase tracking-wide mb-3 animate-pulse shadow-lg">
+                🔥 89/100 disponibles
+              </div>
+              <div className="inline-block bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-xs font-medium uppercase tracking-wide mb-4">
                 Experiencia Premium
               </div>
               <h3 className="text-xl text-gray-800 mb-4 font-semibold">
@@ -189,15 +192,6 @@ const Pricing = () => {
                   </span>
                   <span className="text-sm leading-relaxed">
                     Camiseta DevFest
-                  </span>
-                </li>
-
-                <li className="flex items-start gap-3">
-                  <span className="text-google-blue font-bold text-base mt-0.5">
-                    ✓
-                  </span>
-                  <span className="text-sm leading-relaxed">
-                    Bolsa de regalos premium
                   </span>
                 </li>
 
