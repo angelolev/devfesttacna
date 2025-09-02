@@ -3,11 +3,14 @@
 // @ts-nocheck
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useTicketAvailability } from "../hooks/useTicketAvailability";
 
 const Pricing = () => {
   const [selectedTier, setSelectedTier] = useState<
     "free" | "certificate" | "premium" | null
   >(null);
+
+  const { ticketSettings, loading, error, isLowAvailability } = useTicketAvailability();
 
   return (
     <section id="pricing" className="bg-gray-50 py-24">
@@ -157,9 +160,25 @@ const Pricing = () => {
             } bg-gradient-to-br from-white to-purple-50`}
           >
             <div className="text-center mb-8">
-              <div className="inline-block bg-red-600 text-white px-4 py-2 rounded-full text-sm font-bold uppercase tracking-wide mb-3 animate-pulse shadow-lg">
-                🔥 89/100 disponibles
-              </div>
+              {ticketSettings && !loading && (
+                <div className={`inline-block px-4 py-2 rounded-full text-sm font-bold uppercase tracking-wide mb-3 shadow-lg ${
+                  isLowAvailability 
+                    ? "bg-red-600 text-white animate-pulse" 
+                    : "bg-orange-500 text-white animate-pulse"
+                }`}>
+                  {isLowAvailability ? "🔥" : "⚡"} {ticketSettings.premiumAvailable}/{ticketSettings.premiumTotal} disponibles
+                </div>
+              )}
+              {loading && (
+                <div className="inline-block bg-gray-300 text-gray-600 px-4 py-2 rounded-full text-sm font-bold uppercase tracking-wide mb-3">
+                  Cargando...
+                </div>
+              )}
+              {error && (
+                <div className="inline-block bg-gray-400 text-white px-4 py-2 rounded-full text-sm font-bold uppercase tracking-wide mb-3">
+                  🔥 Disponibilidad limitada
+                </div>
+              )}
               <div className="inline-block bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-xs font-medium uppercase tracking-wide mb-4">
                 Experiencia Premium
               </div>
@@ -207,11 +226,19 @@ const Pricing = () => {
             </div>
 
             <Link
-              to="https://wa.link/h7zpdo"
-              target="_blank"
-              className="w-full inline-block text-center bg-gradient-to-br from-google-blue to-blue-700 text-white border-none py-4 px-8 rounded-full font-medium text-base cursor-pointer hover:from-blue-700 hover:to-blue-800 mb-4"
+              to={ticketSettings?.premiumAvailable === 0 ? "#" : "https://wa.link/h7zpdo"}
+              target={ticketSettings?.premiumAvailable === 0 ? "_self" : "_blank"}
+              onClick={ticketSettings?.premiumAvailable === 0 ? (e) => {
+                e.preventDefault();
+                alert("¡Lo sentimos! Las entradas premium están agotadas.");
+              } : undefined}
+              className={`w-full inline-block text-center py-4 px-8 rounded-full font-medium text-base mb-4 transition-all duration-300 ${
+                ticketSettings?.premiumAvailable === 0
+                  ? "bg-gray-400 text-gray-700 cursor-not-allowed opacity-75"
+                  : "bg-gradient-to-br from-google-blue to-blue-700 text-white hover:from-blue-700 hover:to-blue-800 cursor-pointer"
+              }`}
             >
-              Obtener acceso premium
+              {ticketSettings?.premiumAvailable === 0 ? "Agotadas" : "Obtener acceso premium"}
             </Link>
 
             <p className="text-center text-xs text-gray-500 italic">
