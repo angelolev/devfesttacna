@@ -7,7 +7,7 @@ const Header: React.FC = () => {
   const navigate = useNavigate();
 
   const navigateToSection = (sectionId: string) => {
-    if (location.pathname === '/') {
+    if (location.pathname === "/") {
       // Si estamos en la página principal, hacer scroll directo
       const element = document.getElementById(sectionId);
       element?.scrollIntoView({ behavior: "smooth" });
@@ -53,13 +53,13 @@ const Header: React.FC = () => {
             >
               Entradas
             </button>
-            {/* <button
+            <button
               onClick={() => navigateToSection("speakers")}
               className="bg-transparent border-none text-gray-800 text-base font-medium cursor-pointer py-2 px-4 rounded-full hover:bg-gray-100 hover:text-google-blue transition-colors"
               aria-label="Ir a Ponentes"
             >
-              Ponentes
-            </button> */}
+              Speakers
+            </button>
             <button
               onClick={() => navigateToSection("sponsors")}
               className="bg-transparent border-none text-gray-800 text-base font-medium cursor-pointer py-2 px-4 rounded-full hover:bg-gray-100 hover:text-google-blue transition-colors"

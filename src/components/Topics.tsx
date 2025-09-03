@@ -58,6 +58,15 @@ const Topics = () => {
               </p>
             </div>
 
+            <div className="p-6 bg-gray-50 rounded-xl">
+              <h3 className="text-gray-800 mb-2 text-lg font-semibold">
+                Flutter y su papel en el desarrollo web
+              </h3>
+              <p className="text-gray-600">
+                Creando experiencias multiplataforma
+              </p>
+            </div>
+
             <div className="p-6 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl border-l-4 border-primary-purple">
               <h3 className="text-gray-800 mb-2 text-lg font-semibold">
                 Panel de discusión: Crecimiento profesional en tecnología

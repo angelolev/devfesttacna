@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import VolunteerCTA from "./components/VolunteerCTA";
 import Pricing from "./components/Pricing";
 import Topics from "./components/Topics";
+import Speakers from "./components/Speakers";
 import Sponsors from "./components/Sponsors";
 import Footer from "./components/Footer";
 import AdminRoute from "./components/AdminRoute";
@@ -30,6 +31,7 @@ function HomePage() {
       <main className="">
         <Hero />
         <Topics />
+        <Speakers />
         <Pricing />
         <VolunteerCTA />
         <Sponsors />
