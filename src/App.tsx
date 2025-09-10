@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useEffect } from "react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import CountdownBanner from "./components/CountdownBanner";
 import VolunteerCTA from "./components/VolunteerCTA";
 import Pricing from "./components/Pricing";
 import Topics from "./components/Topics";
@@ -30,6 +31,7 @@ function HomePage() {
       <Header />
       <main className="">
         <Hero />
+        <CountdownBanner />
         <Topics />
         <Speakers />
         <Pricing />
