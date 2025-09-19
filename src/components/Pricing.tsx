@@ -10,7 +10,8 @@ const Pricing = () => {
     "free" | "certificate" | "premium" | null
   >(null);
 
-  const { ticketSettings, loading, error, isLowAvailability } = useTicketAvailability();
+  const { ticketSettings, loading, error, isLowAvailability } =
+    useTicketAvailability();
 
   return (
     <section id="pricing" className="bg-gray-50 py-24">
@@ -169,12 +170,16 @@ const Pricing = () => {
           >
             <div className="text-center mb-8">
               {ticketSettings && !loading && (
-                <div className={`inline-block px-4 py-2 rounded-full text-sm font-bold uppercase tracking-wide mb-3 shadow-lg ${
-                  isLowAvailability 
-                    ? "bg-red-600 text-white animate-pulse" 
-                    : "bg-orange-500 text-white animate-pulse"
-                }`}>
-                  {isLowAvailability ? "🔥" : "⚡"} {ticketSettings.premiumAvailable}/{ticketSettings.premiumTotal} disponibles
+                <div
+                  className={`inline-block px-4 py-2 rounded-full text-sm font-bold uppercase tracking-wide mb-3 shadow-lg ${
+                    isLowAvailability
+                      ? "bg-red-600 text-white animate-pulse"
+                      : "bg-orange-500 text-white animate-pulse"
+                  }`}
+                >
+                  {isLowAvailability ? "🔥" : "⚡"}{" "}
+                  {ticketSettings.premiumAvailable}/
+                  {ticketSettings.premiumTotal} disponibles
                 </div>
               )}
               {loading && (
@@ -242,19 +247,33 @@ const Pricing = () => {
             </div>
 
             <Link
-              to={ticketSettings?.premiumAvailable === 0 ? "#" : "https://wa.link/h7zpdo"}
-              target={ticketSettings?.premiumAvailable === 0 ? "_self" : "_blank"}
-              onClick={ticketSettings?.premiumAvailable === 0 ? (e) => {
-                e.preventDefault();
-                alert("¡Lo sentimos! Las entradas premium están agotadas.");
-              } : undefined}
+              to={
+                ticketSettings?.premiumAvailable === 0
+                  ? "#"
+                  : "https://wa.link/h7zpdo"
+              }
+              target={
+                ticketSettings?.premiumAvailable === 0 ? "_self" : "_blank"
+              }
+              onClick={
+                ticketSettings?.premiumAvailable === 0
+                  ? (e) => {
+                      e.preventDefault();
+                      alert(
+                        "¡Lo sentimos! Las entradas premium están agotadas."
+                      );
+                    }
+                  : undefined
+              }
               className={`w-full inline-block text-center py-4 px-8 rounded-full font-medium text-base mb-4 transition-all duration-300 ${
                 ticketSettings?.premiumAvailable === 0
                   ? "bg-gray-400 text-gray-700 cursor-not-allowed opacity-75"
                   : "bg-gradient-to-br from-google-blue to-blue-700 text-white hover:from-blue-700 hover:to-blue-800 cursor-pointer"
               }`}
             >
-              {ticketSettings?.premiumAvailable === 0 ? "Agotadas" : "Obtener acceso premium"}
+              {ticketSettings?.premiumAvailable === 0
+                ? "Agotadas"
+                : "Obtener acceso premium"}
             </Link>
 
             <p className="text-center text-xs text-gray-500 italic">
@@ -264,6 +283,27 @@ const Pricing = () => {
         </div>
 
         <div className="text-center">
+          <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-8 max-w-4xl mx-auto">
+            <h3 className="text-lg font-semibold text-gray-800 mb-4">
+              ℹ️ Información importante
+            </h3>
+            <div className="text-sm text-gray-700 space-y-2">
+              <p>
+                <strong>🧋 Refrigerio:</strong> Todos los asistentes tendrán
+                acceso a coffee break durante el evento.
+              </p>
+              <p>
+                <strong>🍽️ Almuerzo:</strong> Incluido únicamente para los
+                planes Pro y Platinum.
+              </p>
+              <p>
+                <strong>⚠️ Capacidad limitada:</strong> El aforo del evento es
+                limitado. Te recomendamos registrarte cuanto antes para asegurar
+                tu lugar.
+              </p>
+            </div>
+          </div>
+
           <p className="text-gray-600 mb-4">
             <strong>Todas las ventas de entradas son finales.</strong>{" "}
             Reembolsos disponibles solo en caso de cancelación del evento.

@@ -48,7 +48,7 @@ const CountdownBanner = () => {
   }
 
   return (
-    <div className="bg-gradient-to-r from-google-blue to-purple-600 text-white py-4 px-4 text-center relative overflow-hidden sticky top-[85px] z-40 shadow-lg">
+    <div className="bg-gradient-to-r from-google-blue to-purple-600 text-white py-4 px-4 text-center overflow-hidden sticky top-[80px] md:top-[85px] z-40 shadow-lg">
       <div className="absolute inset-0 bg-black opacity-10"></div>
       <div className="relative z-10 max-w-4xl mx-auto">
         <div className="flex flex-col md:flex-row items-center justify-center gap-4">

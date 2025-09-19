@@ -3,7 +3,7 @@ import frankImg from "../assets/speakers/frank.jpeg";
 import jimyImg from "../assets/speakers/jimy.jpg";
 import eduardImg from "../assets/speakers/eduar.jpg";
 import franklinImg from "../assets/speakers/franklin.jpeg";
-import leslyImg from "../assets/speakers/lesly.jpeg";
+import leslyImg from "../assets/speakers/lesly.jpg";
 import ferminImg from "../assets/speakers/fermin.png";
 
 export interface Speaker {
@@ -55,7 +55,8 @@ const speakers: Speaker[] = [
     name: "Franklin Bustamante",
     position: "Emprendedor tecnológico - Fundador codigo369",
     image: franklinImg,
-    linkedin: "https://www.instagram.com/codigo369",
+    linkedin:
+      "https://www.linkedin.com/in/franklin-jhon-bustamante-alejandria-1539772a6/?originalSubdomain=pe",
   },
   {
     id: "7",
