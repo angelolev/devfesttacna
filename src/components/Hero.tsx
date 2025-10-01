@@ -46,7 +46,7 @@ const Hero: React.FC = () => {
                 Ubicación
               </span>
               <span className="text-lg font-semibold">
-                Centro de Convenciones "Jorge Basadre Grohmann"
+                Universidad Privada de Tacna
               </span>
             </div>
             <div className="flex flex-col items-center gap-1">
@@ -59,11 +59,11 @@ const Hero: React.FC = () => {
 
           <div className="flex justify-center gap-5 mb-16 flex-wrap">
             <Link
-              to="https://sessionize.com/devfest-tacna/"
-              target="_blank"
+              to=""
+              onClick={() => scrollToSection("pricing")}
               className="bg-google-blue text-white border-none py-4 px-8 rounded-full font-medium text-base cursor-pointer inline-flex items-center gap-2 hover:bg-opacity-90"
             >
-              <span>Postula tu charla</span>
+              <span>Regístrate</span>
               <span className="text-lg">→</span>
             </Link>
             <button
@@ -83,7 +83,7 @@ const Hero: React.FC = () => {
               <span className="text-sm opacity-90">Asistentes esperados</span>
             </div>
             <div className="flex flex-col items-center gap-1">
-              <span className="text-4xl font-bold text-google-yellow">5+</span>
+              <span className="text-4xl font-bold text-google-yellow">7+</span>
               <span className="text-sm opacity-90">Ponentes expertos</span>
             </div>
             <div className="flex flex-col items-center gap-1">

@@ -108,7 +108,7 @@ const Speakers = () => {
           ))}
         </div>
 
-        <div className="text-center mt-12">
+        {/* <div className="text-center mt-12">
           <p className="text-gray-600">
             ¿Quieres ser ponente?
             <a
@@ -120,7 +120,7 @@ const Speakers = () => {
               Envía tu propuesta aquí →
             </a>
           </p>
-        </div>
+        </div> */}
       </div>
     </section>
   );

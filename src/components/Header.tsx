@@ -80,11 +80,11 @@ const Header: React.FC = () => {
             </Link>
 
             <Link
-              to="https://sessionize.com/devfest-tacna/"
-              target="_blank"
+              onClick={() => navigateToSection("pricing")}
+              to=""
               className="bg-gradient-to-br from-google-blue to-blue-700 text-white border-none py-3 px-6 rounded-full font-medium text-sm cursor-pointer inline-flex items-center gap-2 hover:from-blue-700 hover:to-blue-800 transition-all duration-300"
             >
-              <span>Ser speaker</span>
+              <span>Regístrate</span>
             </Link>
           </div>
 
@@ -160,11 +160,11 @@ const Header: React.FC = () => {
                 </Link>
 
                 <Link
-                  to="https://sessionize.com/devfest-tacna/"
-                  target="_blank"
+                  to=""
+                  onClick={() => navigateToSection("pricing")}
                   className="w-full block text-center bg-gradient-to-br from-google-blue to-blue-700 text-white border-none py-3 px-6 rounded-full font-medium text-sm hover:from-blue-700 hover:to-blue-800 transition-all duration-300"
                 >
-                  <span>Ser speaker</span>
+                  <span>Regístrate</span>
                 </Link>
               </div>
             </div>
