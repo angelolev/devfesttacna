@@ -117,14 +117,14 @@ const Pricing = () => {
               </div>
               <h3 className="text-xl text-gray-800 mb-4 font-semibold">Pro</h3>
               <div className="flex flex-col items-center gap-1">
-                <div className="flex items-center gap-2">
+                {/* <div className="flex items-center gap-2">
                   <span className="text-2xl font-bold text-gray-400 line-through">
                     S/ 29
                   </span>
                   <span className="text-xs bg-red-500 text-white px-2 py-1 rounded-full font-semibold">
                     Early Bird
                   </span>
-                </div>
+                </div> */}
                 <span className="text-4xl font-bold text-google-blue">
                   S/ 19
                 </span>
@@ -199,14 +199,14 @@ const Pricing = () => {
                 Platinum
               </h3>
               <div className="flex flex-col items-center gap-1">
-                <div className="flex items-center gap-2">
+                {/* <div className="flex items-center gap-2">
                   <span className="text-2xl font-bold text-gray-400 line-through">
                     S/ 49
                   </span>
                   <span className="text-xs bg-red-500 text-white px-2 py-1 rounded-full font-semibold">
                     Early Bird
                   </span>
-                </div>
+                </div> */}
                 <span className="text-4xl font-bold text-google-blue">
                   S/ 39
                 </span>

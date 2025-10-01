@@ -1,7 +1,6 @@
 import damianImg from "../assets/speakers/damian.jpg";
 import frankImg from "../assets/speakers/frank.jpeg";
 import jimyImg from "../assets/speakers/jimy.jpg";
-import eduardImg from "../assets/speakers/eduar.jpg";
 import franklinImg from "../assets/speakers/franklin.jpeg";
 import leslyImg from "../assets/speakers/lesly.jpg";
 import ferminImg from "../assets/speakers/fermin.png";
@@ -39,16 +38,9 @@ const speakers: Speaker[] = [
   {
     id: "4",
     name: "Jimy Dolores",
-    position: "Software Architect - Fundador Angular Perú",
+    position: "Google Developer Expert Angular - Fundador Angular Perú",
     image: jimyImg,
     linkedin: "https://www.linkedin.com/in/jimyhuachodolores/",
-  },
-  {
-    id: "5",
-    name: "Eduar Apaza",
-    position: "Senior Software Engineer - Exabeam",
-    image: eduardImg,
-    linkedin: "https://www.linkedin.com/in/eduarapaza/",
   },
   {
     id: "6",
