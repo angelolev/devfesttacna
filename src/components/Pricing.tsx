@@ -234,15 +234,6 @@ const Pricing = () => {
                     Camiseta DevFest
                   </span>
                 </li>
-
-                <li className="flex items-start gap-3">
-                  <span className="text-google-blue font-bold text-base mt-0.5">
-                    ✓
-                  </span>
-                  <span className="text-sm leading-relaxed">
-                    Asiento prioritario
-                  </span>
-                </li>
               </ul>
             </div>
 
