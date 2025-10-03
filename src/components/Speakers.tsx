@@ -1,9 +1,11 @@
-import damianImg from "../assets/speakers/damian.jpg";
+import damianImg from "../assets/speakers/damian.jpeg";
 import frankImg from "../assets/speakers/frank.jpeg";
 import jimyImg from "../assets/speakers/jimy.jpg";
 import franklinImg from "../assets/speakers/franklin.jpeg";
 import leslyImg from "../assets/speakers/lesly.jpg";
 import ferminImg from "../assets/speakers/fermin.png";
+import angelaImg from "../assets/speakers/angela.jpeg";
+import hansyImg from "../assets/speakers/hansy.jpg";
 
 export interface Speaker {
   id: string;
@@ -57,8 +59,23 @@ const speakers: Speaker[] = [
     image: ferminImg,
     linkedin: "https://www.linkedin.com/in/ferminblanco/",
   },
+  {
+    id: "8",
+    name: "Anhela Camacho",
+    position: "Software Engineer - Lead DSC UTP",
+    image: angelaImg,
+    linkedin:
+      "https://www.linkedin.com/in/angela-irka-enciso-camacho-6394281b6/",
+  },
+  {
+    id: "9",
+    name: "Hansy Schmitt",
+    position: "Fullstack and Mobile Engineer",
+    image: hansyImg,
+    linkedin:
+      "https://www.linkedin.com/in/hansy-schmitt-a152329/?originalSubdomain=pe",
+  },
 ];
-
 const Speakers = () => {
   return (
     <section id="speakers" className="bg-gray-50 py-24">

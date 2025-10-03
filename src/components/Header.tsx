@@ -40,7 +40,7 @@ const Header: React.FC = () => {
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex gap-6 items-center">
             <button
-              onClick={() => navigateToSection("topics")}
+              onClick={() => navigateToSection("schedule")}
               className="bg-transparent border-none text-gray-800 text-base font-medium cursor-pointer py-2 px-4 rounded-full hover:bg-gray-100 hover:text-google-blue transition-colors"
               aria-label="Ir a Cronograma"
             >
@@ -126,7 +126,7 @@ const Header: React.FC = () => {
           <nav className="pt-4 pb-2">
             <div className="flex flex-col space-y-2">
               <button
-                onClick={() => navigateToSection("topics")}
+                onClick={() => navigateToSection("schedule")}
                 className="text-left py-3 px-4 text-gray-800 hover:bg-gray-100 hover:text-google-blue rounded-lg transition-colors"
               >
                 Agenda

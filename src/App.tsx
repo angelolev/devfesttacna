@@ -5,7 +5,7 @@ import Hero from "./components/Hero";
 import CountdownBanner from "./components/CountdownBanner";
 import VolunteerCTA from "./components/VolunteerCTA";
 import Pricing from "./components/Pricing";
-import Topics from "./components/Topics";
+import Schedule from "./components/Schedule";
 import Speakers from "./components/Speakers";
 import Sponsors from "./components/Sponsors";
 import Footer from "./components/Footer";
@@ -32,7 +32,7 @@ function HomePage() {
       <main className="">
         <Hero />
         <CountdownBanner />
-        <Topics />
+        <Schedule />
         <Speakers />
         <Pricing />
         <VolunteerCTA />

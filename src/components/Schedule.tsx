@@ -5,8 +5,7 @@ const Schedule = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-google-blue mb-4">Agenda</h2>
           <p className="text-lg text-gray-600">
-            Un día completo de aprendizaje, networking e innovación • 22 de
-            noviembre de 2025
+            Un día completo de aprendizaje, networking e innovación
           </p>
         </div>
 
@@ -24,10 +23,10 @@ const Schedule = () => {
             <div className="flex gap-6 p-6 bg-gray-50 rounded-xl">
               <div className="min-w-[100px] text-center">
                 <span className="text-xl font-semibold text-google-blue block">
-                  8:00 AM
+                  9:00 AM
                 </span>
                 <span className="text-xs text-gray-500 uppercase tracking-wide">
-                  60 min
+                  30 min
                 </span>
               </div>
               <div className="flex-1">
@@ -46,10 +45,10 @@ const Schedule = () => {
             <div className="flex gap-6 p-6 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl border-l-4 border-primary-purple">
               <div className="min-w-[100px] text-center">
                 <span className="text-xl font-semibold text-google-blue block">
-                  9:00 AM
+                  9:30 AM
                 </span>
                 <span className="text-xs text-gray-500 uppercase tracking-wide">
-                  30 min
+                  15 min
                 </span>
               </div>
               <div className="flex-1">
@@ -68,7 +67,7 @@ const Schedule = () => {
                   <span className="text-gray-700">Equipo GDG Tacna</span>
                 </div>
                 <div className="text-gray-600 text-sm italic">
-                  📍 Auditorio principal
+                  📍 Auditorio "Luis Mellado Manzano" UPT
                 </div>
               </div>
             </div>
@@ -77,7 +76,36 @@ const Schedule = () => {
             <div className="flex gap-6 p-6 bg-gray-50 rounded-xl">
               <div className="min-w-[100px] text-center">
                 <span className="text-xl font-semibold text-google-blue block">
-                  9:30 AM
+                  9:45 AM
+                </span>
+                <span className="text-xs text-gray-500 uppercase tracking-wide">
+                  30 min
+                </span>
+              </div>
+              <div className="flex-1">
+                <h3 className="text-gray-800 mb-2 text-lg font-semibold">
+                  Hackea tu Aprendizaje: Construye tu Ecosistema de Aprendizaje
+                  con IA
+                </h3>
+                <p className="text-gray-600 mb-3">
+                  Construye tu Ecosistema de aprendizaje con IA
+                </p>
+                <div className="flex items-center gap-2 mb-2 text-sm">
+                  <span className="text-base">👨‍💻</span>
+                  <span className="text-gray-700">
+                    Frank García - Coordinador de Innovación Educativa - USIL
+                  </span>
+                </div>
+                <div className="text-gray-600 text-sm italic">
+                  📍 Auditorio "Luis Mellado Manzano" UPT
+                </div>
+              </div>
+            </div>
+
+            <div className="flex gap-6 p-6 bg-gray-50 rounded-xl">
+              <div className="min-w-[100px] text-center">
+                <span className="text-xl font-semibold text-google-blue block">
+                  10:15 AM
                 </span>
                 <span className="text-xs text-gray-500 uppercase tracking-wide">
                   30 min
@@ -94,11 +122,12 @@ const Schedule = () => {
                 <div className="flex items-center gap-2 mb-2 text-sm">
                   <span className="text-base">👨‍💻</span>
                   <span className="text-gray-700">
-                    Jimy Dolores - Fundador Angular Perú
+                    Jimy Dolores - Google Developer Expert Angular - Fundador
+                    Angular Perú
                   </span>
                 </div>
                 <div className="text-gray-600 text-sm italic">
-                  📍 Auditorio principal
+                  📍 Auditorio "Luis Mellado Manzano" UPT
                 </div>
               </div>
             </div>
@@ -106,7 +135,7 @@ const Schedule = () => {
             <div className="flex gap-6 p-6 bg-green-50 rounded-xl border-l-4 border-primary-purple">
               <div className="min-w-[100px] text-center">
                 <span className="text-xl font-semibold text-google-blue block">
-                  10:00 AM
+                  10:45 AM
                 </span>
                 <span className="text-xs text-gray-500 uppercase tracking-wide">
                   15 min
@@ -126,10 +155,10 @@ const Schedule = () => {
             <div className="flex gap-6 p-6 bg-gray-50 rounded-xl">
               <div className="min-w-[100px] text-center">
                 <span className="text-xl font-semibold text-google-blue block">
-                  10:15 AM
+                  11:00 AM
                 </span>
                 <span className="text-xs text-gray-500 uppercase tracking-wide">
-                  45 min
+                  30 min
                 </span>
               </div>
               <div className="flex-1">
@@ -147,7 +176,7 @@ const Schedule = () => {
                   </span>
                 </div>
                 <div className="text-gray-600 text-sm italic">
-                  📍 Auditorio principal
+                  📍 Auditorio "Luis Mellado Manzano" UPT
                 </div>
               </div>
             </div>
@@ -155,23 +184,28 @@ const Schedule = () => {
             <div className="flex gap-6 p-6 bg-gray-50 rounded-xl">
               <div className="min-w-[100px] text-center">
                 <span className="text-xl font-semibold text-google-blue block">
-                  11:00 AM
+                  11:30 AM
                 </span>
                 <span className="text-xs text-gray-500 uppercase tracking-wide">
-                  45 min
+                  30 min
                 </span>
               </div>
               <div className="flex-1">
                 <h3 className="text-gray-800 mb-2 text-lg font-semibold">
-                  TBD
+                  Flutter y su papel en el desarrollo web: creando experiencias
+                  multiplataforma
                 </h3>
-                <p className="text-gray-600 mb-3">TBD</p>
+                <p className="text-gray-600 mb-3">
+                  Creando experiencias multiplataforma con un solo código base.
+                </p>
                 <div className="flex items-center gap-2 mb-2 text-sm">
-                  <span className="text-base">☁️</span>
-                  <span className="text-gray-700">TBD</span>
+                  <span className="text-base">🤖</span>
+                  <span className="text-gray-700">
+                    Angela Camacho - Lead DSC UTP
+                  </span>
                 </div>
                 <div className="text-gray-600 text-sm italic">
-                  📍 Auditorio principal
+                  📍 Auditorio "Luis Mellado Manzano" UPT
                 </div>
               </div>
             </div>
@@ -228,22 +262,20 @@ const Schedule = () => {
                   12:00 PM
                 </span>
                 <span className="text-xs text-gray-500 uppercase tracking-wide">
-                  90 min
+                  120 min
                 </span>
               </div>
               <div className="flex-1">
                 <h3 className="text-gray-800 mb-2 text-lg font-semibold">
                   Pausa para el almuerzo
                 </h3>
-                <p className="text-gray-600 mb-3">
-                  Almuerzo de networking y exhibiciones de patrocinadores
-                </p>
+                <p className="text-gray-600 mb-3">Almuerzo</p>
                 <div className="space-y-1 mb-2">
                   <div className="text-sm text-gray-600">
-                    🍕 Premium: Almuerzo incluido
+                    🍕 Premium: Almuerzo y refrigerios incluido
                   </div>
                   <div className="text-sm text-gray-600">
-                    🥤 Gratuito: Refrigerios ligeros disponibles
+                    🥤 Gratuito: Refrigerios incluidos
                   </div>
                 </div>
                 <div className="text-gray-600 text-sm italic">
@@ -256,31 +288,7 @@ const Schedule = () => {
             <div className="flex gap-6 p-6 bg-gray-50 rounded-xl">
               <div className="min-w-[100px] text-center">
                 <span className="text-xl font-semibold text-google-blue block">
-                  1:30 PM
-                </span>
-                <span className="text-xs text-gray-500 uppercase tracking-wide">
-                  45 min
-                </span>
-              </div>
-              <div className="flex-1">
-                <h3 className="text-gray-800 mb-2 text-lg font-semibold">
-                  TBD
-                </h3>
-                <p className="text-gray-600 mb-3">TBD</p>
-                <div className="flex items-center gap-2 mb-2 text-sm">
-                  <span className="text-base">🤖</span>
-                  <span className="text-gray-700">TBD</span>
-                </div>
-                <div className="text-gray-600 text-sm italic">
-                  📍 Auditorio principal
-                </div>
-              </div>
-            </div>
-
-            <div className="flex gap-6 p-6 bg-gray-50 rounded-xl">
-              <div className="min-w-[100px] text-center">
-                <span className="text-xl font-semibold text-google-blue block">
-                  2:15 PM
+                  2:00 PM
                 </span>
                 <span className="text-xs text-gray-500 uppercase tracking-wide">
                   30 min
@@ -288,15 +296,49 @@ const Schedule = () => {
               </div>
               <div className="flex-1">
                 <h3 className="text-gray-800 mb-2 text-lg font-semibold">
-                  TBD
+                  Revolucionando el reciclaje con Google APIs
                 </h3>
-                <p className="text-gray-600 mb-3">TBD</p>
+                <p className="text-gray-600 mb-3">
+                  Construyendo soluciones verdes desde el código con Google
+                  APIs.
+                </p>
                 <div className="flex items-center gap-2 mb-2 text-sm">
-                  <span className="text-base">⚙️</span>
-                  <span className="text-gray-700">TBD</span>
+                  <span className="text-base">♻️</span>
+                  <span className="text-gray-700">
+                    Franklin Bustamante - Fundador codigo369
+                  </span>
                 </div>
                 <div className="text-gray-600 text-sm italic">
-                  📍 Auditorio principal
+                  📍 Auditorio "Luis Mellado Manzano" UPT
+                </div>
+              </div>
+            </div>
+
+            <div className="flex gap-6 p-6 bg-gray-50 rounded-xl">
+              <div className="min-w-[100px] text-center">
+                <span className="text-xl font-semibold text-google-blue block">
+                  2:30 PM
+                </span>
+                <span className="text-xs text-gray-500 uppercase tracking-wide">
+                  30 min
+                </span>
+              </div>
+              <div className="flex-1">
+                <h3 className="text-gray-800 mb-2 text-lg font-semibold">
+                  Construyendo tu primer agente de IA: más allá de la llamada a
+                  una API de LLM
+                </h3>
+                <p className="text-gray-600 mb-3">
+                  ¿Qué son y cómo funcionan los agentes de IA?
+                </p>
+                <div className="flex items-center gap-2 mb-2 text-sm">
+                  <span className="text-base">📱</span>
+                  <span className="text-gray-700">
+                    Lesly Zerna - Google Developer Expert Machine Learning
+                  </span>
+                </div>
+                <div className="text-gray-600 text-sm italic">
+                  📍 Auditorio "Luis Mellado Manzano" UPT
                 </div>
               </div>
             </div>
@@ -304,7 +346,7 @@ const Schedule = () => {
             <div className="flex gap-6 p-6 bg-green-50 rounded-xl border-l-4 border-primary-purple">
               <div className="min-w-[100px] text-center">
                 <span className="text-xl font-semibold text-google-blue block">
-                  2:45 PM
+                  3:00 PM
                 </span>
                 <span className="text-xs text-gray-500 uppercase tracking-wide">
                   15 min
@@ -321,31 +363,89 @@ const Schedule = () => {
               </div>
             </div>
 
-            <div className="flex gap-6 p-6 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl border-l-4 border-primary-purple">
+            <div className="flex gap-6 p-6 bg-gray-50 rounded-xl">
               <div className="min-w-[100px] text-center">
                 <span className="text-xl font-semibold text-google-blue block">
-                  3:00 PM
+                  3:15 PM
                 </span>
                 <span className="text-xs text-gray-500 uppercase tracking-wide">
-                  45 min
+                  30 min
                 </span>
               </div>
               <div className="flex-1">
                 <h3 className="text-gray-800 mb-2 text-lg font-semibold">
-                  Panel de discusión: Crecimiento profesional en tecnología
+                  Mi robot, tu robot , nuestro robot : Hardware en los tiempos
+                  de IA
                 </h3>
                 <p className="text-gray-600 mb-3">
-                  Expertos en tecnología discuten el desarrollo profesional y
-                  las oportunidades en tecnología
+                  ¿Sabías que tambien puedes controlar robots con IA?
                 </p>
                 <div className="flex items-center gap-2 mb-2 text-sm">
-                  <span className="text-base">👥</span>
+                  <span className="text-base">📱</span>
                   <span className="text-gray-700">
-                    Panel de expertos de la industria
+                    Hansy Schmitt - Fullstack and Mobile Engineer
                   </span>
                 </div>
                 <div className="text-gray-600 text-sm italic">
-                  📍 Auditorio principal
+                  📍 Auditorio "Luis Mellado Manzano" UPT
+                </div>
+              </div>
+            </div>
+
+            <div className="flex gap-6 p-6 bg-gray-50 rounded-xl">
+              <div className="min-w-[100px] text-center">
+                <span className="text-xl font-semibold text-google-blue block">
+                  3:45 PM
+                </span>
+                <span className="text-xs text-gray-500 uppercase tracking-wide">
+                  30 min
+                </span>
+              </div>
+              <div className="flex-1">
+                <h3 className="text-gray-800 mb-2 text-lg font-semibold">
+                  Engineering a Sourcing Agent
+                </h3>
+                <p className="text-gray-600 mb-3">
+                  Cómo los agentes de sourcing automatizan el reclutamiento
+                </p>
+                <div className="flex items-center gap-2 mb-2 text-sm">
+                  <span className="text-base">📱</span>
+                  <span className="text-gray-700">
+                    Fermín Blanco - Software Engineer - GDG Lead Cúcuta
+                  </span>
+                </div>
+                <div className="text-gray-600 text-sm italic">
+                  📍 Auditorio "Luis Mellado Manzano" UPT
+                </div>
+              </div>
+            </div>
+
+            <div className="flex gap-6 p-6 bg-gray-50 rounded-xl">
+              <div className="min-w-[100px] text-center">
+                <span className="text-xl font-semibold text-google-blue block">
+                  4:15 PM
+                </span>
+                <span className="text-xs text-gray-500 uppercase tracking-wide">
+                  30 min
+                </span>
+              </div>
+              <div className="flex-1">
+                <h3 className="text-gray-800 mb-2 text-lg font-semibold">
+                  De la teoría al despliegue: La IA como agente disruptivo en
+                  entornos académicos y empresariales
+                </h3>
+                <p className="text-gray-600 mb-3">
+                  La IA ha llegado para quedarse y para cambiar la forma en que
+                  aprendemos
+                </p>
+                <div className="flex items-center gap-2 mb-2 text-sm">
+                  <span className="text-base">📱</span>
+                  <span className="text-gray-700">
+                    Juan Carlos Eduardo Romaina Acevedo - Software Engineer
+                  </span>
+                </div>
+                <div className="text-gray-600 text-sm italic">
+                  📍 Auditorio "Luis Mellado Manzano" UPT
                 </div>
               </div>
             </div>
@@ -353,7 +453,7 @@ const Schedule = () => {
             <div className="flex gap-6 p-6 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl border-l-4 border-primary-purple">
               <div className="min-w-[100px] text-center">
                 <span className="text-xl font-semibold text-google-blue block">
-                  4:00 PM
+                  4:45 PM
                 </span>
                 <span className="text-xs text-gray-500 uppercase tracking-wide">
                   30 min
@@ -367,40 +467,16 @@ const Schedule = () => {
                   Resumen del evento, anuncios de premios y agradecimientos
                 </p>
                 <div className="text-gray-600 text-sm italic">
-                  📍 Auditorio principal
-                </div>
-              </div>
-            </div>
-
-            <div className="flex gap-6 p-6 bg-yellow-50 rounded-xl border-l-4 border-yellow-400">
-              <div className="min-w-[100px] text-center">
-                <span className="text-xl font-semibold text-google-blue block">
-                  4:30 PM
-                </span>
-                <span className="text-xs text-gray-500 uppercase tracking-wide">
-                  90 min
-                </span>
-              </div>
-              <div className="flex-1">
-                <h3 className="text-gray-800 mb-2 text-lg font-semibold">
-                  Networking y clausura
-                </h3>
-                <p className="text-gray-600 mb-2">
-                  Networking final, fotos y celebración
-                </p>
-                <div className="text-gray-600 text-sm italic">
-                  📍 Auditorio principal
+                  📍 Auditorio "Luis Mellado Manzano" UPT
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="text-center mt-10 p-5 bg-yellow-100 border border-yellow-300 rounded-lg text-yellow-800">
+        <div className="text-center mt-10 p-5 bg-blue-100 border border-blue-300 rounded-lg text-blue-800">
           <p>
-            <strong>Nota:</strong> El horario está sujeto a cambios. Los
-            asistentes a los talleres premium recibirán por correo electrónico
-            los materiales detallados y los requisitos previos antes del evento.
+            <strong>Nota:</strong> El horario está sujeto a cambios.
           </p>
         </div>
       </div>
