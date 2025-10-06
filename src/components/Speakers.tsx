@@ -6,6 +6,7 @@ import leslyImg from "../assets/speakers/lesly.jpg";
 import ferminImg from "../assets/speakers/fermin.png";
 import angelaImg from "../assets/speakers/angela.jpeg";
 import hansyImg from "../assets/speakers/hansy.jpg";
+import juanCarlosImg from "../assets/speakers/jc.jpeg";
 
 export interface Speaker {
   id: string;
@@ -75,6 +76,13 @@ const speakers: Speaker[] = [
     linkedin:
       "https://www.linkedin.com/in/hansy-schmitt-a152329/?originalSubdomain=pe",
   },
+  {
+    id: "10",
+    name: "Juan Carlos Romaina",
+    position: "Director de Ing. de Software Tranzact",
+    image: juanCarlosImg,
+    linkedin: "https://www.linkedin.com/in/jcromaina/",
+  },
 ];
 const Speakers = () => {
   return (
@@ -88,7 +96,7 @@ const Speakers = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-4xl mx-auto justify-items-center">
           {speakers.map((speaker) => (
             <a
               key={speaker.id}
