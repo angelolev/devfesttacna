@@ -67,7 +67,7 @@ const Schedule = () => {
                   <span className="text-gray-700">Equipo GDG Tacna</span>
                 </div>
                 <div className="text-gray-600 text-sm italic">
-                  📍 Auditorio "Luis Mellado Manzano" UPT
+                  📍 Auditorio "Javier Ríos Lavagna" UPT
                 </div>
               </div>
             </div>
@@ -97,7 +97,7 @@ const Schedule = () => {
                   </span>
                 </div>
                 <div className="text-gray-600 text-sm italic">
-                  📍 Auditorio "Luis Mellado Manzano" UPT
+                  📍 Auditorio "Javier Ríos Lavagna" UPT
                 </div>
               </div>
             </div>
@@ -127,7 +127,7 @@ const Schedule = () => {
                   </span>
                 </div>
                 <div className="text-gray-600 text-sm italic">
-                  📍 Auditorio "Luis Mellado Manzano" UPT
+                  📍 Auditorio "Javier Ríos Lavagna" UPT
                 </div>
               </div>
             </div>
@@ -176,7 +176,7 @@ const Schedule = () => {
                   </span>
                 </div>
                 <div className="text-gray-600 text-sm italic">
-                  📍 Auditorio "Luis Mellado Manzano" UPT
+                  📍 Auditorio "Javier Ríos Lavagna" UPT
                 </div>
               </div>
             </div>
@@ -205,7 +205,7 @@ const Schedule = () => {
                   </span>
                 </div>
                 <div className="text-gray-600 text-sm italic">
-                  📍 Auditorio "Luis Mellado Manzano" UPT
+                  📍 Auditorio "Javier Ríos Lavagna" UPT
                 </div>
               </div>
             </div>
@@ -309,7 +309,7 @@ const Schedule = () => {
                   </span>
                 </div>
                 <div className="text-gray-600 text-sm italic">
-                  📍 Auditorio "Luis Mellado Manzano" UPT
+                  📍 Auditorio "Javier Ríos Lavagna" UPT
                 </div>
               </div>
             </div>
@@ -338,7 +338,7 @@ const Schedule = () => {
                   </span>
                 </div>
                 <div className="text-gray-600 text-sm italic">
-                  📍 Auditorio "Luis Mellado Manzano" UPT
+                  📍 Auditorio "Javier Ríos Lavagna" UPT
                 </div>
               </div>
             </div>
@@ -387,7 +387,7 @@ const Schedule = () => {
                   </span>
                 </div>
                 <div className="text-gray-600 text-sm italic">
-                  📍 Auditorio "Luis Mellado Manzano" UPT
+                  📍 Auditorio "Javier Ríos Lavagna" UPT
                 </div>
               </div>
             </div>
@@ -415,7 +415,7 @@ const Schedule = () => {
                   </span>
                 </div>
                 <div className="text-gray-600 text-sm italic">
-                  📍 Auditorio "Luis Mellado Manzano" UPT
+                  📍 Auditorio "Javier Ríos Lavagna" UPT
                 </div>
               </div>
             </div>
@@ -445,7 +445,7 @@ const Schedule = () => {
                   </span>
                 </div>
                 <div className="text-gray-600 text-sm italic">
-                  📍 Auditorio "Luis Mellado Manzano" UPT
+                  📍 Auditorio "Javier Ríos Lavagna" UPT
                 </div>
               </div>
             </div>
@@ -467,7 +467,7 @@ const Schedule = () => {
                   Resumen del evento, anuncios de premios y agradecimientos
                 </p>
                 <div className="text-gray-600 text-sm italic">
-                  📍 Auditorio "Luis Mellado Manzano" UPT
+                  📍 Auditorio "Javier Ríos Lavagna" UPT
                 </div>
               </div>
             </div>

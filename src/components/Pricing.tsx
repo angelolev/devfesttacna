@@ -92,7 +92,7 @@ const Pricing = () => {
             </div>
 
             <Link
-              to="https://forms.gle/Uyt55BhfH256BUJm6"
+              to="https://luma.com/1zie0cxm"
               target="_blank"
               className="w-full inline-block text-center bg-white text-google-blue border-2 border-google-blue py-4 px-8 rounded-full font-medium text-base cursor-pointer transition-all duration-300 hover:bg-google-blue hover:text-white hover:-translate-y-0.5 hover:shadow-lg mb-4"
             >
