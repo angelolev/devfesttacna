@@ -66,13 +66,13 @@ const Hero: React.FC = () => {
               <span>Regístrate</span>
               <span className="text-lg">→</span>
             </Link>
-            <button
+            {/* <button
               onClick={() => scrollToSection("volunteer")}
               className="bg-gray-200 text-gray-800 py-4 px-8 rounded-full font-medium text-base cursor-pointer inline-flex items-center gap-2 hover:bg-gray-300"
             >
               <span>Únete como voluntario</span>
               <span className="text-lg">♥</span>
-            </button>
+            </button> */}
           </div>
 
           <div className="flex justify-center gap-16 flex-wrap">

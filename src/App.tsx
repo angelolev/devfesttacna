@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import CountdownBanner from "./components/CountdownBanner";
-import VolunteerCTA from "./components/VolunteerCTA";
+// import VolunteerCTA from "./components/VolunteerCTA";
 import Pricing from "./components/Pricing";
 import Schedule from "./components/Schedule";
 import Speakers from "./components/Speakers";
@@ -35,7 +35,7 @@ function HomePage() {
         <Schedule />
         <Speakers />
         <Pricing />
-        <VolunteerCTA />
+        {/* <VolunteerCTA /> */}
         <Sponsors />
       </main>
       <Footer />

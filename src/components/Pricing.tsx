@@ -21,8 +21,7 @@ const Pricing = () => {
             Elige tu experiencia DevFest
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Selecciona el nivel de acceso que mejor se adapte a tus objetivos de
-            aprendizaje y presupuesto
+            El evento es GRATUITO, pero puedes vivirlo de diferentes maneras
           </p>
         </div>
 
@@ -133,7 +132,7 @@ const Pricing = () => {
 
             <div className="flex-1">
               <h4 className="text-gray-800 mb-4 text-lg font-semibold">
-                Todo lo de la entrada gratuita, más:
+                Todo lo de la experiencia gratuita, más:
               </h4>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start gap-3">
@@ -215,7 +214,7 @@ const Pricing = () => {
 
             <div className="flex-1">
               <h4 className="text-gray-800 mb-4 text-lg font-semibold">
-                Todo lo de la entrada gratuita, más:
+                Todo lo de la experiencia gratuita, más:
               </h4>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start gap-3">
@@ -284,8 +283,8 @@ const Pricing = () => {
                 acceso a coffee break durante el evento.
               </p>
               <p>
-                <strong>🍽️ Almuerzo:</strong> Incluido únicamente para los
-                planes Pro y Platinum.
+                <strong>🍽️ Almuerzo:</strong> Incluido únicamente para las
+                experiencias Pro y Platinum.
               </p>
               <p>
                 <strong>⚠️ Capacidad limitada:</strong> El aforo del evento es

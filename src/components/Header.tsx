@@ -49,9 +49,9 @@ const Header: React.FC = () => {
             <button
               onClick={() => navigateToSection("pricing")}
               className="bg-transparent border-none text-gray-800 text-base font-medium cursor-pointer py-2 px-4 rounded-full hover:bg-gray-100 hover:text-google-blue transition-colors"
-              aria-label="Ir a Entradas"
+              aria-label="Ir a Experiencias"
             >
-              Entradas
+              Experiencias
             </button>
             <button
               onClick={() => navigateToSection("speakers")}
@@ -71,13 +71,13 @@ const Header: React.FC = () => {
 
           {/* Desktop CTA Buttons */}
           <div className="hidden lg:flex gap-3 items-center">
-            <Link
+            {/* <Link
               to="/volunteers"
               className="bg-white text-google-blue border-2 border-google-blue py-3 px-6 rounded-full font-medium text-sm inline-flex items-center gap-2 hover:bg-google-blue hover:text-white transition-all duration-300"
               aria-label="Ser voluntario"
             >
               Ser voluntario
-            </Link>
+            </Link> */}
 
             <Link
               onClick={() => navigateToSection("pricing")}
