@@ -25,6 +25,29 @@ const Pricing = () => {
           </p>
         </div>
 
+        {/* Important Information Banner */}
+        <div className="bg-yellow-50 border-2 border-yellow-300 rounded-xl p-6 mb-12 max-w-5xl mx-auto">
+          <div className="flex items-start gap-4">
+            <div className="flex-shrink-0">
+              <span className="text-3xl">ℹ️</span>
+            </div>
+            <div className="flex-1">
+              <h3 className="text-lg font-bold text-gray-800 mb-2">
+                Información importante
+              </h3>
+              <p className="text-base text-gray-700 leading-relaxed">
+                Para quienes deseen obtener beneficios adicionales como{" "}
+                <strong>certificado digital de asistencia</strong> y{" "}
+                <strong>merchandising exclusivo</strong>, existe la opción de
+                adquirir experiencias <strong>Pro (S/ 19)</strong> o{" "}
+                <strong>Platinum (S/ 39)</strong>. Esta compra es{" "}
+                <strong>completamente opcional</strong> y no es requisito para
+                participar en el evento.
+              </p>
+            </div>
+          </div>
+        </div>
+
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
           {/* Free Tier */}
           <div
