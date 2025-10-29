@@ -21,8 +21,8 @@ const Sponsors = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 items-center justify-items-center mb-16">
-          <div className="flex items-center justify-center h-20 w-full">
+        <div className="flex flex-wrap justify-center gap-8 md:gap-12 mb-16 mx-auto max-w-4xl">
+          <div className="flex items-center justify-center h-20 w-40 md:w-52">
             <img
               src="/googlelogo.svg"
               alt="Google"
@@ -30,7 +30,15 @@ const Sponsors = () => {
             />
           </div>
 
-          <div className="flex items-center justify-center h-20 w-full">
+          <div className="flex items-center justify-center h-20 w-40 md:w-52">
+            <img
+              src="/jetbrains.svg"
+              alt="Jetbrains"
+              className="max-h-28 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
+            />
+          </div>
+
+          <div className="flex items-center justify-center h-20 w-40 md:w-52">
             <img
               src="/epis.png"
               alt="Escuela Profesional de Ingeniería de Sistemas - Universidad Privada de Tacna"
@@ -38,14 +46,14 @@ const Sponsors = () => {
             />
           </div>
 
-          <div className="flex items-center justify-center h-20 w-full">
+          <div className="flex items-center justify-center h-20 w-40 md:w-52">
             <img
               src="/googledevs.svg"
               alt="Google for Developers"
               className="max-h-16 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
             />
           </div>
-          <div className="flex items-center justify-center h-20 w-full">
+          <div className="flex items-center justify-center h-20 w-40 md:w-52">
             <img
               src="/upt.jpg"
               alt="Universidad Privada de Tacna"
