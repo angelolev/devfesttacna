@@ -182,54 +182,27 @@ const Pricing = () => {
             </p>
           </div>
 
-          {/* Premium Tier */}
+          {/* Premium Tier - SOLD OUT */}
           <div
-            className={`bg-white border-2 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-lg flex flex-col h-full ${
-              selectedTier === "premium"
-                ? "border-google-blue transform -translate-y-1"
-                : "border-transparent shadow-md"
-            } bg-gradient-to-br from-white to-purple-50`}
+            className={`bg-white border-2 rounded-2xl p-8 transition-all duration-300 flex flex-col h-full border-transparent shadow-md bg-gradient-to-br from-gray-50 to-gray-100 opacity-75 relative`}
           >
+            {/* Sold Out Badge */}
+            <div className="absolute top-4 right-4 bg-red-600 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide rotate-12 shadow-lg">
+              Sold Out
+            </div>
+
             <div className="text-center mb-8">
-              {ticketSettings && !loading && (
-                <div
-                  className={`inline-block px-4 py-2 rounded-full text-sm font-bold uppercase tracking-wide mb-3 shadow-lg ${
-                    isLowAvailability
-                      ? "bg-red-600 text-white animate-pulse"
-                      : "bg-orange-500 text-white animate-pulse"
-                  }`}
-                >
-                  {isLowAvailability ? "🔥" : "⚡"}{" "}
-                  {ticketSettings.premiumAvailable}/
-                  {ticketSettings.premiumTotal} disponibles
-                </div>
-              )}
-              {loading && (
-                <div className="inline-block bg-gray-300 text-gray-600 px-4 py-2 rounded-full text-sm font-bold uppercase tracking-wide mb-3">
-                  Cargando...
-                </div>
-              )}
-              {error && (
-                <div className="inline-block bg-gray-400 text-white px-4 py-2 rounded-full text-sm font-bold uppercase tracking-wide mb-3">
-                  🔥 Disponibilidad limitada
-                </div>
-              )}
+              <div className="inline-block bg-red-100 text-red-700 px-4 py-2 rounded-full text-sm font-bold uppercase tracking-wide mb-3 shadow-md">
+                🔴 Agotadas
+              </div>
               <div className="inline-block bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-xs font-medium uppercase tracking-wide mb-4">
                 Experiencia Premium
               </div>
-              <h3 className="text-xl text-gray-800 mb-4 font-semibold">
+              <h3 className="text-xl text-gray-600 mb-4 font-semibold">
                 Platinum
               </h3>
               <div className="flex flex-col items-center gap-1">
-                {/* <div className="flex items-center gap-2">
-                  <span className="text-2xl font-bold text-gray-400 line-through">
-                    S/ 49
-                  </span>
-                  <span className="text-xs bg-red-500 text-white px-2 py-1 rounded-full font-semibold">
-                    Early Bird
-                  </span>
-                </div> */}
-                <span className="text-4xl font-bold text-google-blue">
+                <span className="text-4xl font-bold text-gray-400 line-through">
                   S/ 39
                 </span>
               </div>
@@ -259,38 +232,15 @@ const Pricing = () => {
               </ul>
             </div>
 
-            <Link
-              to={
-                ticketSettings?.premiumAvailable === 0
-                  ? "#"
-                  : "https://wa.link/h7zpdo"
-              }
-              target={
-                ticketSettings?.premiumAvailable === 0 ? "_self" : "_blank"
-              }
-              onClick={
-                ticketSettings?.premiumAvailable === 0
-                  ? (e) => {
-                      e.preventDefault();
-                      alert(
-                        "¡Lo sentimos! Las entradas premium están agotadas."
-                      );
-                    }
-                  : undefined
-              }
-              className={`w-full inline-block text-center py-4 px-8 rounded-full font-medium text-base mb-4 transition-all duration-300 ${
-                ticketSettings?.premiumAvailable === 0
-                  ? "bg-gray-400 text-gray-700 cursor-not-allowed opacity-75"
-                  : "bg-gradient-to-br from-google-blue to-blue-700 text-white hover:from-blue-700 hover:to-blue-800 cursor-pointer"
-              }`}
+            <button
+              disabled
+              className="w-full inline-block text-center py-4 px-8 rounded-full font-medium text-base mb-4 bg-gray-400 text-gray-700 cursor-not-allowed opacity-75"
             >
-              {ticketSettings?.premiumAvailable === 0
-                ? "Agotadas"
-                : "Obtener acceso premium"}
-            </Link>
+              🔴 Sold Out - Agotadas
+            </button>
 
-            <p className="text-center text-xs text-gray-500 italic">
-              La mejor opción para vivir una experiencia única
+            <p className="text-center text-xs text-red-600 italic font-semibold">
+              ¡Todas las entradas Platinum han sido vendidas!
             </p>
           </div>
         </div>
